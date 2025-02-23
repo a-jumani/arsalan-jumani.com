@@ -19,7 +19,8 @@ export default function Footer() {
   return (
     <footer className="mb-16">
       <ul className="font-sm mt-8 flex flex-col space-x-0 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300">
-        <li>
+        {/* Temporarily hidden RSS link - uncomment when configured */}
+        {/* <li>
           <a
             className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
             rel="noopener noreferrer"
@@ -29,13 +30,13 @@ export default function Footer() {
             <ArrowIcon />
             <p className="ml-2 h-7">rss</p>
           </a>
-        </li>
+        </li> */}
         <li>
           <a
             className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
             rel="noopener noreferrer"
             target="_blank"
-            href="https://github.com/vercel/next.js"
+            href="https://github.com/a-jumani"
           >
             <ArrowIcon />
             <p className="ml-2 h-7">github</p>
@@ -46,10 +47,21 @@ export default function Footer() {
             className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
             rel="noopener noreferrer"
             target="_blank"
+            href="https://www.linkedin.com/in/arsalan-jumani-a1r"
+          >
+            <ArrowIcon />
+            <p className="ml-2 h-7">linkedin</p>
+          </a>
+        </li>
+        <li>
+          <a
+            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+            rel="noopener noreferrer"
+            target="_blank"
             href="https://vercel.com/templates/next.js/portfolio-starter-kit"
           >
             <ArrowIcon />
-            <p className="ml-2 h-7">view source</p>
+            <p className="ml-2 h-7">template</p>
           </a>
         </li>
       </ul>
